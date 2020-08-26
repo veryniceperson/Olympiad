@@ -17,7 +17,7 @@
     <div id="scrollpath"></div>
     <div id="percent"></div>
     <div class="navbar">
-    <a style="margin-right: 0.25%;" href="" target="_blank">How to keep yourself safe</a>
+    <a style="margin-right: 0.25%;" href="safety_info.html" target="_blank">How to keep yourself safe</a>
     <a style="margin-right: 0.25%;" href="" target="_blank">What to do if you think you are sick</a>
     <button class="Light-mode" onclick="myFunction()">Toggle dark/light mode</button>
 
@@ -29,5 +29,32 @@
           </script>
     </div>
 
+    <br>
+
     <h1 style="margin-bottom: 3%;">How to keep you and your loved ones safe from dangerous infections</h1>
+
+    <h2 style="margin-bottom: 3%;">Hello there! This website is created to help you make sure that you and your loved ones 
+    know how to stay safe from dangerous infections, such as Influenza. Get started by clicking on one of the buttons below.</h2>
+
+    <a style="float: left; margin-right: 2%;" class="homepage_buttons" href="safety_info.html">
+      <img class="homepage_buttons" src="Images/Mask icon.png" style="float: left; white-space: nowrap;">
+      How to keep yourself and others safe
+    </a>
+
+    <a style="float: right;" class="homepage_buttons" href="safety_info.html">
+      <img class="homepage_buttons" src="Images/First aid box icon.png" style="float: left; width:99%;">
+      What you should do if you suspect that you or someone else is sick
+    </a>
+
+    <script type="text/javascript">    
+      var percent = document.getElementById("progressbar");
+      var percent = document.getElementById("percent");
+
+      var totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function(){
+        var progress = (window.pageYOffset / totalHeight) * -400;
+        progressbar.style.height = progress + "%";
+      }
+  </script>
   </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+      <title> How to stay safe from infections </title>
+      <link rel="icon" type="image/png" href="Images/red cross icon.png"/>
+      <link rel="stylesheet" href="stylesheet.css">
+    <a class="homepage_shortcut" href="index.html">
+      <img style="border-radius: 0px;"src="Images/olympiad home button.png" width="10%" height="auto">
+    </a>
+  </head>
+
+  <br>
+  <body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <div id="percent"></div>
+    <div class="navbar">
+    <a style="margin-right: 0.25%;" href="safety_info.html" target="_blank">How to keep yourself safe</a>
+    <a style="margin-right: 0.25%;" href="" target="_blank">What to do if you think you are sick</a>
+    <button class="Light-mode" onclick="myFunction()">Toggle dark/light mode</button>
+
+          <script>
+            function myFunction() {
+            var element = document.body;
+            element.classList.toggle("light-mode");
+          }
+          </script>
+    </div>
+
+    <h2 style="margin-bottom: 3%;">
+        The webpage will give you advice on how to stay safe from dangerous infections. This guide can be applied to most 
+        infectious diseases. 
+    </h2>
+
+    <h3 style="margin-bottom: 3%;">
+        <b>1.</b> Washing your hands often
+    </h3>
+
+    <p>
+        <img src="Images/Hand washing image.jpg" style="float: right; margin: 3%; margin-bottom: 5%;" width="30%" height="auto">
+        Washing your hands is one of the most important things you can do in order to keep yourself and others safe. Your hands are full of microscopic organisms, because you touch many contaminated things everyday. 
+        It's just a part of your life. Moreover, you touch your face, eyes, mouth, nose and ears with your hands. You wouldn't want to do that with hands that are contaminated with various diseases, because those parts 
+        of your body are the main entry points for disease. So wash your hands often, like after you visit the bathroom, before you eat or prepare, after having a trip outside and even after using your phone. Just make sure that you 
+        wash your hands before you touch any of the body's disease main entry points (mouth, eyes, nose and ears). If hand washing isn't avaliable you can use alcohol based disinfectants.
+    </p>
+
+    <h3 style="margin-bottom: 3%;">
+       <b>2.</b> Preparing foods and drinks safely
+    </h3>
+    <p> 
+        Microscopic organisms such as germs quickly grow on food and if not handled/prepared properly, the person which consumes the food might contract an infection and suffer things like vomiting and diarrhea. 
+        You should keep surfaces clean (such as cutting boards), wash fruits and vegetables and cook food at appropriate temperatures. In addition, don't leave food out and keep it inside a refrigerator in order to maintan 
+        safety.
+    </p>
+
+    <h3 style="margin-bottom: 3%;">
+        <b>3.</b> Cough or sneeze into your elbow
+    </h3>
+
+    <p>
+        <img src="https://media.istockphoto.com/photos/man-in-mid-cough-demonstrating-proper-hygienic-procedure-picture-id93458614?k=6&m=93458614&s=612x612&w=0&h=QaDsmLNdv3vt_hfmnc35R3TiDIYFJef_nqVs7SGUo2U=" style="float: right; margin-left:2%;" width="30%" height="auto">
+        You should cough or sneeze into your elbow instead of your hands, because you are likely to touch something or someone else after you have sneezed and you have a high chance of infecting someone. On the other hand, whenever you cough/sneeze into your elbow 
+        you have a low chance of infecting someone, because this method effectively blocks all microscopic organisms that come out as you sneeze. 
+    </p>
+
+    <h3 style="margin-bottom: 3%;">
+        <b>4.</b> Don't share personal items
+    </h3>
+
+    <p>
+        It is highly recommended that you don't personal objects such as toothbrushes, towels, razors and especially needles. It is very easy to get infected through these objects if they are contaminated and 
+    </p>
+
+    <script type="text/javascript">    
+        var percent = document.getElementById("progressbar");
+        var percent = document.getElementById("percent");
+  
+        var totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+          var progress = (window.pageYOffset / totalHeight) * -100;
+          progressbar.style.height = progress + "%";
+        }
+    </script>
+    </body>
+  </html>
+  

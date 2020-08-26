@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #090924;
   width: 80%;
   padding-left: 10%;
   padding-right: 10%;
@@ -8,39 +8,39 @@ body {
 
 h1 {
   text-align: center;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Oxygen', sans-serif;
   font-size: 46px;
-  color: white;
+  color: #A9A9A9;
 }
 
 h2 {
-  color: white;
+  color: #A9A9A9;
   text-align: center;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Oxygen', sans-serif;
   font-size: 38px;
   font-weight: lighter;
 }
 
 h3 {
-color: white;
+color: #A9A9A9;
 text-align: center;
-font-family: 'Roboto Mono', monospace;
+font-family: 'Oxygen', sans-serif;
 font-size: 38px;
 font-weight: bold;
 }
 
 h4 {
-color: white;
+color: #A9A9A9;
 text-align: left;
-font-family: 'Roboto Mono', monospace;
+font-family: 'Oxygen', sans-serif;
 font-size: 32px;
 font-weight: bold;
 }
 
 p {
-  color: white;
+  color: #A9A9A9;
   text-align: justify;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Oxygen', sans-serif;
   font-size: 24px;
   font-weight: normal;
   z-index: 10;
@@ -48,9 +48,9 @@ p {
 }
 
 li {
-  color: white;
+  color: #A9A9A9;
   text-align: left;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Oxygen', sans-serif;
   font-size: 28px;
   font-weight: lighter;
 }
@@ -74,12 +74,61 @@ img {
 
 .homepage_buttons {
   width: 45%;
-  height: 10%;
-  font-size: 38px;
-  color: white;
-  font-family: 'Roboto Mono', monospace;
+  padding:1%;
+  height: auto;
+  font-size: 28px;
+  color: #A9A9A9;
+  font-family: 'Oxygen', sans-serif;
   text-align: center;
-  background-color: Transparent;
+  background-color: #02023b;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  border-radius: 20px;
+}
+
+.light-mode .homepage_buttons {
+  width: 45%;
+  padding:1%;
+  height: auto;
+  font-size: 28px;
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+  background-color: #20B2AA;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  border-radius: 20px;
+}
+
+.homepage_buttons img{
+  width: 100%;
+  height: 20%;
+  font-size: 38px;
+  color: #A9A9A9;
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+  background-color: transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+.light-mode .homepage_buttons img{
+  width: 100%;
+  height: 20%;
+  font-size: 38px;
+  color: #A9A9A9;
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+  background-color: transparent;
   background-repeat:no-repeat;
   border: none;
   cursor:pointer;
@@ -88,10 +137,17 @@ img {
 }
 
 .homepage_buttons:hover {
-  color: grey;
+  color: white;
   font-weight: bolder;
-  font-size: 39px;
   transition-delay: 0.2s;
+  background-color: #00008B;
+}
+
+.light-mode .homepage_buttons:hover {
+  color: black;
+  font-weight: bolder;
+  transition-delay: 0.2s;
+  background-color: #66CDAA
 }
 
 .navbar {
@@ -99,7 +155,7 @@ img {
   width: 79%;
   height: 5.6%;
   padding-right: 10%;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Oxygen', sans-serif;
   margin-bottom: 2.5%;
   position:fixed;
   top: 0;
@@ -116,7 +172,7 @@ img {
   padding: 14px 16px;
   text-decoration: none;
   border-radius: 20px;
-  background-color: black;
+  background-color: #0f1a1a;
 }
 
 .dropdown {
@@ -139,7 +195,7 @@ img {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #e29f4b;
+  background-color: #45ac8b;
   border-radius: 20px;
 }
 
@@ -169,16 +225,16 @@ img {
 }
 
 .light-mode .navbar  a:hover, .dropdown:hover .dropbtn {
-  background-color: #e29f4b;
+  background-color: #7FFFD4;
   border-radius: 20px;
 }
 
 .Light-mode:hover{
-  background-color:#e29f4b;
+  background-color:#45ac8b;;
 }
 
 .light-mode .Light-mode:hover{
-  background-color: #ffdaaa;
+  background-color: #45ac8b;;
 }
 
 .light-mode .dropdown:hover .dropdown-content {
@@ -193,8 +249,8 @@ img {
   border: none;
   color: white;
   padding: 14px 16px;
-  background-color: black;
-  font-family: 'Roboto Mono', monospace;
+  background-color: #0f1a1a;
+  font-family: 'Oxygen', sans-serif;
   margin: 0;
   text-align: center;
   border-radius: 20px;
@@ -205,12 +261,12 @@ img {
 }
 
 .light-mode .navbar a {
-  background-color: #d5b68e;
+  background-color: #4682B4;
   color: black;
 }
 
 .light-mode .navbar button {
-  background-color: #d5b68e;
+  background-color: #4682B4;
   color: black;
 }
 
@@ -220,7 +276,7 @@ img {
 }
 
 .light-mode .Light-mode:hover {
-  background-color: #e29f4b;
+  background-color: #7FFFD4;
 }
 
 .dropdown-content a {
@@ -257,7 +313,7 @@ img {
 
 .Getting_Started a {
   font-size: 24px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Oxygen', sans-serif;
   text-align: center;
   background-color: Transparent;
   background-repeat:no-repeat;
@@ -293,7 +349,7 @@ code {
 p a {
   font-size: 24px;
   color: greenyellow;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Oxygen', sans-serif;
   text-align: left;
   background-color: Transparent;
   background-repeat:no-repeat;
@@ -307,7 +363,7 @@ p a {
 .light-mode p a {
   font-size: 24px;
   color: white;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Oxygen', sans-serif;
   text-align: left;
   background-color: Transparent;
   background-repeat:no-repeat;
@@ -341,8 +397,8 @@ th {
 
 table {
   font-size: 24px;
-  color: white;
-  font-family: 'Roboto Mono', monospace;
+  color: #A9A9A9;
+  font-family: 'Oxygen', sans-serif;
   text-align: center;
   width: 100%;
   background: rgb(38,38,38);
@@ -371,7 +427,7 @@ input {
 }
 
 .light-mode {
-  background-color: #b69b79;
+  background-color: #5F9EA0;
 
 }
 
@@ -416,8 +472,8 @@ input {
 
 .light-mode table {
   font-size: 24px;
-  color: white;
-  font-family: 'Roboto Mono', monospace;
+  color: #A9A9A9;
+  font-family: 'Oxygen', sans-serif;
   text-align: center;
   width: 100%;
   background: black;
@@ -499,7 +555,7 @@ input {
   right: 15px;
   font-size: 16px;
   transform: translateY(-50%) rotateX(180deg) rotateY(180deg);
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Oxygen', sans-serif;
   color: white;
   writing-mode: vertical-rl;
   text-orientation: sideways;
