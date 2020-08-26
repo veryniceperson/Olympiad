@@ -289,7 +289,6 @@ img {
 }
 
 .dropdown-content a:hover {
-  background-color: #e29f4b;
   background-color: grey;
   border-radius: 20px;
 }
@@ -569,3 +568,5 @@ input {
 a {
   text-decoration: underline;
 }
+
+li
