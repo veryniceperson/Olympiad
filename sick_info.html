@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+      <title> What to do if you suspect that you are infected  </title>
+      <link rel="icon" type="image/png" href="Images/red cross icon.png"/>
+      <link rel="stylesheet" href="stylesheet.css">
+    <a class="homepage_shortcut" href="index.html">
+      <img style="border-radius: 0px;"src="Images/olympiad home button.png" width="10%" height="auto">
+    </a>
+  </head>
+
+  <body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <div id="percent"></div>
+    <div class="navbar">
+      <a style="margin-right: 0.25%;" href="safety_info.html" target="_blank">How to keep yourself safe</a>
+      <a style="margin-right: 0.25%;" href="sick_info.html" target="_blank">What to do if you think you are sick</a>
+    <button class="Light-mode" onclick="myFunction()">Toggle dark/light mode</button>
+
+          <script>
+            function myFunction() {
+            var element = document.body;
+            element.classList.toggle("light-mode");
+          }
+          </script>
+    </div>
+
+    <br>
+
+    <h1 style="margin-bottom: 3%;">What you should do if you suspect that you or someone close to you is infected</h1>
+
+    <h2 style="margin-bottom: 3%;">This webpage will guide you on what you should do if you suspect that you or someone else is infected. 
+      <br>
+      <strong>If you or someone is having a life-threatining situation, make sure to call the emergency services right away.</strong>
+    </h2>
+
+    <ol>
+      <li>First of all, make sure to cancel any meetups with other people, because you have a chance of infecting them. If you live with someone that is infected, you should assume that you are infected as well and take the same precautions.</li>
+      <li>If your symptoms aren't very serious (light cough, runny nose, sore throat, headaches, etc) you should stay at home and treat yourself using appropriate methods (paracetamol, throat lozenges, cough drops, etc). Make sure that you don't visit anyone or have them visit you.</li>
+      <li>If your symptops are serious (severe headaches, diarrhea, frequent vomiting, temperature above 38C°, etc) go to the hospital. Make sure to not contact anyone and take precautions to not infect others, such as wearing a mask and gloves.</li>
+      <li>If you are going to the hospital, do not use public transport and instead use your own car. If you do not have a method of personal transportation, contact the hospital for an ambulance. </li>
+      <li>Make sure that you get tested for your sickness at the hospital, so healthcare workers would be able to treat you efficiently and so you would know how to avoid contracting the same disease again. </li>
+    </ol>
+
+    <script type="text/javascript">    
+      var percent = document.getElementById("progressbar");
+      var percent = document.getElementById("percent");
+
+      var totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function(){
+        var progress = (window.pageYOffset / totalHeight) * 100;
+        progressbar.style.height = progress + "%";
+      }
+  </script>
+  </body>
+    </html>
